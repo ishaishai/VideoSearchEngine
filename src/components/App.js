@@ -1,8 +1,8 @@
 import React from 'react';
-import SearchBar from './SearchBar';
+import SearchBar from './searchComponents/SearchBar';
 import ProgressBar from './searchComponents/ProgressBar';
-import VideoDetail from './VideoDetail';
-import VideoList from './VideoList';
+import VideoDetail from './videoComponents/VideoDetail';
+import VideoList from './videoComponents/VideoList';
 
 class App extends React.Component {
     state = {videos: []};

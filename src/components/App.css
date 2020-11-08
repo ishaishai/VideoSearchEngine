@@ -1,7 +1,8 @@
 .logoText {
   font-family: 'Goldman';
-  font-size: 18px;
+  font-size: 24px;
   display: inline-block;
+  color: rgba(223, 230, 233, 1);
 }
 .searchField {
   width: 70% !important;
@@ -10,6 +11,11 @@
 .searchBox {
   width: 80% !important;
   margin-right: 20px !important;
+}
+
+.ui.form {
+  display: inline;
+  margin-left: 1em;
 }
 
 .segment {

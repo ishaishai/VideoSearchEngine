@@ -1,6 +1,6 @@
 import React from 'react';
-import './App.css'
-import youtube from '../api/youtube';
+import '../App.css'
+import youtube from '../../api/youtube';
 
 class SearchBar extends React.Component {
     constructor(props) {
