@@ -7,7 +7,7 @@ const VideoList = ({videos}) => {
         return <VideoItem video = {video}/>
     }) : null;
 
-    return <div className="videoList"> {renderedList} </div>
+    return <div className="videoList"> <div style={{marginTop: "10px"}}>Search results: </div>  {renderedList} </div>
 }
 
 export default VideoList;

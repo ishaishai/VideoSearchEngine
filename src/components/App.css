@@ -1,3 +1,8 @@
+.logoText {
+  font-family: 'Goldman';
+  font-size: 18px;
+  display: inline-block;
+}
 .searchField {
   width: 70% !important;
   display: inline-block !important;
@@ -13,16 +18,19 @@
 }
 
 .videoDetail {
-  width: 70%;
+  width: 65%;
   height: 100%;
   display: inline-block;
 }
 
 .videoList {
-  width: 30%;
+  width: 35%;
   display: inline-block;
   height: 100%;
   position: absolute;
+  background-color: rgba(223, 230, 233, 0.3);
+  border-radius: 2%;
+  padding: 0.5%;
 }
 
 .videoItem {

@@ -29,6 +29,7 @@ class SearchBar extends React.Component {
     }
     render() { 
         return <div className = "search-bar ui segment">
+            <div className="logoText"> VidRubb </div>
             <form className="ui form" onSubmit={this.searchTerm}>
                 <div className="field searchField">
                     <input className="searchBox" type="text" placeholder="Video Search Here..."
