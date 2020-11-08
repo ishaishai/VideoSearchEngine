@@ -15,7 +15,7 @@ class App extends React.Component {
     }
 
     handleVideos = (result) => {
-        this.setState({videos: result.data.items});
+        this.setState({videos: result.data.items,selectedVideo: result.data.items[0]});
     }
 
     handleVideoSelect = (item) => {
@@ -27,7 +27,7 @@ class App extends React.Component {
         return (<div style={{height: "100%"}}>
                 <ProgressBar status = {this.state.progress}/> 
                 <SearchBar amount = {(this.state.videos) ? this.state.videos.length : null} handleResults = {this.handleVideos} onChange = {this.changeProgress} />      
-                <VideoDetail video = {this.state.selectedVideo}  />
+                <VideoDetail video = {this.state.selectedVideo} onChange = {this.changeProgress}  />
                 <VideoList onVideoSelect = {this.handleVideoSelect} videos = {this.state.videos}/>
                 </div>);
     }
