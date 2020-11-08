@@ -6,7 +6,7 @@ const ProgressBar = (props) => {
 
     return (<div className="ui">
             <Step.Group>
-                <Step active = {(props.status!=0) ? true : false}
+                <Step active = {(props.status!==0) ? true : false}
                  disabled={(props.status>=1) ? false : true} 
                  completed={(props.status>=2) ? true : false}
                  >
@@ -17,7 +17,9 @@ const ProgressBar = (props) => {
                 </Step.Content>
                 </Step>
 
-                <Step disabled={(props.status>=2) ? false: true}>
+                <Step active = {(props.status!==1)? true:false}
+                    disabled={(props.status>=2) ? false: true}
+                    completed= {(props.status>=3)? true:false}>
                 <Icon name='eye' />
                 <Step.Content>
                     <Step.Title>Watching</Step.Title>
@@ -25,7 +27,9 @@ const ProgressBar = (props) => {
                 </Step.Content>
                 </Step>
 
-                <Step disabled={(props.status>=3) ? false : true}>
+                <Step active = {(props.status>=3) ? true:false}
+                        disabled={(props.status>=3) ? false : true}
+                        completed ={(props.status===4) ? true: false}>
                 <Icon name='repeat' />
                 <Step.Content>
                     <Step.Title>Enjoying</Step.Title>
