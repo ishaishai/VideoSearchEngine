@@ -5,12 +5,10 @@ import VideoDetail from './videoComponents/VideoDetail';
 import VideoList from './videoComponents/VideoList';
 
 class App extends React.Component {
-    state = {videos: [], selectedVideo: null};
+    state = {videos: [], selectedVideo: null,progress: 0};
     constructor(props) {
         super(props);
     }
-
-    state = {progress: 0};
 
     changeProgress = (status) => {
         this.setState({progress: status});
@@ -22,7 +20,7 @@ class App extends React.Component {
 
     handleVideoSelect = (item) => {
         console.log("selected video",item);
-        this.setState({selectedVideo: item});
+        this.setState({selectedVideo: item,progress: 2});
     }
 
     render() {

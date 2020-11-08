@@ -28,8 +28,13 @@
   width: 65%;
   height: 100%;
   display: inline-block;
+  font-family: 'Goldman';
+  font-size: 18px;
 }
 
+.ui.embed {
+  margin-bottom: 10px;
+}
 .videoList {
   width: 35%;
   display: inline-block;

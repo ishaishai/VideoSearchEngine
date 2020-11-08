@@ -18,14 +18,19 @@ class SearchBar extends React.Component {
     searchTerm = async (event) => {
         event.preventDefault(); 
         console.log(this.state.term);
+        try {
+            let result = await youtube.get('/search', {
+                params: {
+                    q: this.state.term,
+                }
+            });
 
-        let result = await youtube.get('/search', {
-            params: {
-                q: this.state.term,
-            }
-        });
+            console.log(result);
 
-        this.props.handleResults(result);
+            this.props.handleResults(result);
+        }catch(error) {
+            console.log(error);
+        }
     }
     render() { 
         return <div className = "search-bar ui segment">
