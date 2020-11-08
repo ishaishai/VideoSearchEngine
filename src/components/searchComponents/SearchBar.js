@@ -36,7 +36,7 @@ class SearchBar extends React.Component {
                         onFocus={() => this.changeProgressStatus(1)}
                         onChange={(event) => this.setState({term: event.target.value})}
                         /> 
-                    <input type="button" className = "ui button green" value="Search"/>
+                    <input type="button" className = "ui button green" value="Search" onClick={this.searchTerm}/>
                     {this.props.amount && <div style={{color: "white",display: "inline",marginLeft: "10px"}}> found {this.props.amount} videos </div>}
                 </div>
             </form>

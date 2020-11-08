@@ -24,6 +24,7 @@
 }
 
 .videoDetail {
+  padding: 3%;
   width: 65%;
   height: 100%;
   display: inline-block;
@@ -41,6 +42,7 @@
 
 .videoItem {
   display: grid;
+  cursor: pointer;
 }
 
 .videoItem .title {

@@ -5,7 +5,7 @@ import VideoDetail from './videoComponents/VideoDetail';
 import VideoList from './videoComponents/VideoList';
 
 class App extends React.Component {
-    state = {videos: []};
+    state = {videos: [], selectedVideo: null};
     constructor(props) {
         super(props);
     }
@@ -20,12 +20,17 @@ class App extends React.Component {
         this.setState({videos: result.data.items});
     }
 
+    handleVideoSelect = (item) => {
+        console.log("selected video",item);
+        this.setState({selectedVideo: item});
+    }
+
     render() {
         return (<div style={{height: "100%"}}>
                 <ProgressBar status = {this.state.progress}/> 
                 <SearchBar amount = {(this.state.videos) ? this.state.videos.length : null} handleResults = {this.handleVideos} onChange = {this.changeProgress} />      
-                <VideoDetail />
-                <VideoList videos = {this.state.videos}/>
+                <VideoDetail video = {this.state.selectedVideo}  />
+                <VideoList onVideoSelect = {this.handleVideoSelect} videos = {this.state.videos}/>
                 </div>);
     }
 
