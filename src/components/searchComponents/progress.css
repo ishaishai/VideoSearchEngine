@@ -1,0 +1,13 @@
+.ui.steps {
+    display: flex !important;
+    margin: auto !important;
+}
+
+.content .title {
+    color: grey !important;
+}
+
+.content .description {
+    color: grey !important;
+}
+

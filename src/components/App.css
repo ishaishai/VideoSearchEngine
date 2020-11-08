@@ -1,0 +1,13 @@
+.searchField {
+    width: 70% !important;
+    display: inline-block !important;
+    
+}
+.searchBox {
+    width: 80% !important;
+}
+
+.segment { 
+    background-color: #2c2b2b !important;
+    margin: 0 !important;
+}
