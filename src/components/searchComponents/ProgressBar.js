@@ -8,7 +8,8 @@ const ProgressBar = (props) => {
             <Step.Group>
                 <Step active = {(props.status!=0) ? true : false}
                  disabled={(props.status>=1) ? false : true} 
-                 completed={(props.status>=2) ? true : false}>
+                 completed={(props.status>=2) ? true : false}
+                 >
                 <Icon name='search' />
                 <Step.Content>
                     <Step.Title>Searching</Step.Title>

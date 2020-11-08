@@ -1,13 +1,40 @@
 .searchField {
-    width: 70% !important;
-    display: inline-block !important;
-    
+  width: 70% !important;
+  display: inline-block !important;
 }
 .searchBox {
-    width: 80% !important;
+  width: 80% !important;
+  margin-right: 20px !important;
 }
 
-.segment { 
-    background-color: #2c2b2b !important;
-    margin: 0 !important;
+.segment {
+  background-color: #2c2b2b !important;
+  margin: 0 !important;
+}
+
+.videoDetail {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+}
+
+.videoList {
+  width: 30%;
+  display: inline-block;
+  height: 100%;
+  position: absolute;
+}
+
+.videoItem {
+  display: grid;
+}
+
+.videoItem .title {
+  margin-bottom: 3px;
+  font-family: 'Goldman';
+  font-size: 18px;
+}
+
+#root {
+  height: 100%;
 }
